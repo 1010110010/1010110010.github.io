@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>126写真集</title>
+    <script typet="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <style>
+        .img{
+            height: 28%;
+            width: 48%;
+            float: right;
+            margin-bottom: 1%;
+            margin-right: 1%;
+
+        }
+        body{
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: silver;
+        }
+
+        #div{
+            height: 99%;
+            width: 99%;
+            /*background-color: aquamarine;*/
+            position:fixed;
+            margin-top: auto;
+            display: none;
+        }
+        .bigImg{
+
+            width:75%;
+        }
+        a{
+            float: left;
+        }
+
+    </style>
+    <script>
+        function goBig(id){
+            var div = document.getElementById("div");
+            div.style.display="block";
+            var bigPhoto = "<img class='bigImg' onclick='goSmall("+id+")' src='img/IMG_"+id+".JPG'>";
+            $("#div").html(bigPhoto);
+        }
+
+        function goSmall(id) {
+            var div = document.getElementById("div");
+            div.style.display = "none";
+        }
+    </script>
+</head>
+<body id="body">
+
+<img class="img" id="img6134" onclick="goBig(6134)" src="img/IMG_6134.JPG"><img class="img" id="img6135" onclick="goBig(6135)" src="img/IMG_6135.JPG"><img class="img" id="img6136" onclick="goBig(6136)" src="img/IMG_6136.JPG"><img class="img" id="img6137" onclick="goBig(6137)" src="img/IMG_6137.JPG"><img class="img" id="img6138" onclick="goBig(6138)" src="img/IMG_6138.JPG"><img class="img" id="img6139" onclick="goBig(6139)" src="img/IMG_6139.JPG"><img class="img" id="img6143" onclick="goBig(6143)" src="img/IMG_6143.JPG"><img class="img" id="img6144" onclick="goBig(6144)" src="img/IMG_6144.JPG"><img class="img" id="img6145" onclick="goBig(6145)" src="img/IMG_6145.JPG"><img class="img" id="img6146" onclick="goBig(6146)" src="img/IMG_6146.JPG"><img class="img" id="img6147" onclick="goBig(6147)" src="img/IMG_6147.JPG"><img class="img" id="img6149" onclick="goBig(6149)" src="img/IMG_6149.JPG"><img class="img" id="img6150" onclick="goBig(6150)" src="img/IMG_6150.JPG"><img class="img" id="img6151" onclick="goBig(6151)" src="img/IMG_6151.JPG"><img class="img" id="img6152" onclick="goBig(6152)" src="img/IMG_6152.JPG"><img class="img" id="img6153" onclick="goBig(6153)" src="img/IMG_6153.JPG"><img class="img" id="img6154" onclick="goBig(6154)" src="img/IMG_6154.JPG"><img class="img" id="img6155" onclick="goBig(6155)" src="img/IMG_6155.JPG"><img class="img" id="img6156" onclick="goBig(6156)" src="img/IMG_6156.JPG"><img class="img" id="img6157" onclick="goBig(6157)" src="img/IMG_6157.JPG"><img class="img" id="img6158" onclick="goBig(6158)" src="img/IMG_6158.JPG"><img class="img" id="img6159" onclick="goBig(6159)" src="img/IMG_6159.JPG"><img class="img" id="img6160" onclick="goBig(6160)" src="img/IMG_6160.JPG">
+<div id="div">
+
+</div>
+<div><p>当前第五页</p><a href="index.html">第一页</a> ++++ <a href="2.html">第二页</a> ++++  <a href="3.html">第三页</a>++++
+    <a href="4.html">第四页</a>++++
+    ++++</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>126写真集</title>
+    <script typet="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <style>
+        .img{
+            height: 28%;
+            width: 48%;
+            float: right;
+            margin-bottom: 1%;
+            margin-right: 1%;
+
+        }
+        body{
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: silver;
+        }
+
+        #div{
+            height: 99%;
+            width: 99%;
+            /*background-color: aquamarine;*/
+            position:fixed;
+            margin-top: auto;
+            display: none;
+        }
+        .bigImg{
+
+            width:75%;
+        }
+        a{
+            float: left;
+        }
+
+    </style>
+    <script>
+        function goBig(id){
+            var div = document.getElementById("div");
+            div.style.display="block";
+            var bigPhoto = "<img class='bigImg' onclick='goSmall("+id+")' src='img/IMG_"+id+".JPG'>";
+            $("#div").html(bigPhoto);
+        }
+
+        function goSmall(id) {
+            var div = document.getElementById("div");
+            div.style.display = "none";
+        }
+    </script>
+</head>
+<body id="body">
+<img class="img" id="img6062" onclick="goBig(6062)" src="img/IMG_6062.JPG"><img class="img" id="img6063" onclick="goBig(6063)" src="img/IMG_6063.JPG"><img class="img" id="img6064" onclick="goBig(6064)" src="img/IMG_6064.JPG"><img class="img" id="img6065" onclick="goBig(6065)" src="img/IMG_6065.JPG"><img class="img" id="img6066" onclick="goBig(6066)" src="img/IMG_6066.JPG"><img class="img" id="img6067" onclick="goBig(6067)" src="img/IMG_6067.JPG"><img class="img" id="img6068" onclick="goBig(6068)" src="img/IMG_6068.JPG"><img class="img" id="img6069" onclick="goBig(6069)" src="img/IMG_6069.JPG"><img class="img" id="img6070" onclick="goBig(6070)" src="img/IMG_6070.JPG"><img class="img" id="img6071" onclick="goBig(6071)" src="img/IMG_6071.JPG"><img class="img" id="img6072" onclick="goBig(6072)" src="img/IMG_6072.JPG"><img class="img" id="img6073" onclick="goBig(6073)" src="img/IMG_6073.JPG"><img class="img" id="img6074" onclick="goBig(6074)" src="img/IMG_6074.JPG"><img class="img" id="img6075" onclick="goBig(6075)" src="img/IMG_6075.JPG"><img class="img" id="img6076" onclick="goBig(6076)" src="img/IMG_6076.JPG"><img class="img" id="img6077" onclick="goBig(6077)" src="img/IMG_6077.JPG"><img class="img" id="img6078" onclick="goBig(6078)" src="img/IMG_6078.JPG"><img class="img" id="img6079" onclick="goBig(6079)" src="img/IMG_6079.JPG"><img class="img" id="img6080" onclick="goBig(6080)" src="img/IMG_6080.JPG"><img class="img" id="img6081" onclick="goBig(6081)" src="img/IMG_6081.JPG"><img class="img" id="img6082" onclick="goBig(6082)" src="img/IMG_6082.JPG"><img class="img" id="img6084" onclick="goBig(6084)" src="img/IMG_6084.JPG"><img class="img" id="img6085" onclick="goBig(6085)" src="img/IMG_6085.JPG"><img class="img" id="img6086" onclick="goBig(6086)" src="img/IMG_6086.JPG"><img class="img" id="img6087" onclick="goBig(6087)" src="img/IMG_6087.JPG"><img class="img" id="img6088" onclick="goBig(6088)" src="img/IMG_6088.JPG"><img class="img" id="img6089" onclick="goBig(6089)" src="img/IMG_6089.JPG"><img class="img" id="img6090" onclick="goBig(6090)" src="img/IMG_6090.JPG"><img class="img" id="img6091" onclick="goBig(6091)" src="img/IMG_6091.JPG"><img class="img" id="img6092" onclick="goBig(6092)" src="img/IMG_6092.JPG">
+
+<div id="div">
+
+</div>
+<div>
+    <p>当前第二页</p><a href="index.html">第一页</a> ++++  ++++  <a href="3.html">第三页</a>++++
+    <a href="4.html">第四页</a>++++
+    ++++<a href="5.html">第五页</a></div>
+</body>
+</html>
