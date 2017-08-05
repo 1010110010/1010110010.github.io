@@ -27,3 +27,19 @@ body{
 a{
     float: left;
 }
+#daohang{
+
+    width:100%;
+    position: fixed;
+    overflow: hidden;
+    left:0;
+    top:0;
+
+
+
+}
+
+
+
+
+
